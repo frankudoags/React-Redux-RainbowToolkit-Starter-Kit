@@ -15,7 +15,7 @@ Created by [FrankUdoags](https://github.com/frankudoags)
 ## Usage
 Clone this repository then install the dependencies: 
 
-### `npm i`
+```npm i```
 
 This will install all the dependencies
 
