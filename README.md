@@ -19,7 +19,7 @@ Clone this repository then install the dependencies:
 
 This will install all the dependencies
 
-Also create a .env in the root folder where your package.json file is and add the following line: 
+Also create a .env file in the root folder where your package.json file is and add the following line: 
 `GENERATE_SOURCEMAP=false`
 
 This helps avoid a lot of terminal errors that can be annoying.
