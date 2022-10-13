@@ -22,6 +22,7 @@ This will install all the dependencies
 Also create a .env file in the root folder where your package.json file is and add the following line: 
 `GENERATE_SOURCEMAP=false`
 
+
 This helps avoid a lot of terminal errors that can be annoying.
 
 
