@@ -1,11 +1,15 @@
 import React from 'react';
-import { ConnectButton } from '@rainbow-me/rainbowkit';
+import { Navbar, Home } from "./components"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="flex items-center h-screen justify-center">
-      <ConnectButton />
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+      </Routes>
+    </Router>
   );
 }
 

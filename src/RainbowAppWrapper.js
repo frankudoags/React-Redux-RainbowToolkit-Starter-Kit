@@ -1,7 +1,7 @@
 import React from 'react';
 import App from './App';
 import '@rainbow-me/rainbowkit/styles.css';
-import { RainbowKitProvider, getDefaultWallets } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, getDefaultWallets, darkTheme } from '@rainbow-me/rainbowkit';
 import { chain, configureChains, createClient, WagmiConfig } from 'wagmi';
 import { alchemyProvider } from 'wagmi/providers/alchemy';
 import { publicProvider } from 'wagmi/providers/public';
@@ -30,7 +30,13 @@ const RainbowAppWrapper = () => {
 
     return (
         <WagmiConfig client={wagmiClient}>
-            <RainbowKitProvider chains={chains}>
+            <RainbowKitProvider chains={chains} theme={darkTheme({
+                accentColor: 'black',
+                accentColorForeground: 'white',
+                borderRadius: 'medium',
+                fontStack: 'system',
+                overlayBlur: 'small',
+            })}>
                 <App />
             </RainbowKitProvider>
         </WagmiConfig>
