@@ -45,7 +45,7 @@ export default function Navbar() {
                     <div className='flex gap-x-2 items-center'>
                     <ConnectButton />
                     <div className="-my-2 -mr-2 md:hidden">
-                        <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                        <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-black">
                             <span className="sr-only">Open menu</span>
                             <Bars3Icon className="h-8 w-8 text-black" aria-hidden="true" />
                         </Popover.Button>
@@ -77,7 +77,7 @@ export default function Navbar() {
                                     </Link>
                                 </div>
                                 <div className="-mr-2">
-                                    <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                                    <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-black">
                                         <span className="sr-only">Close menu</span>
                                         <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                                     </Popover.Button>
@@ -108,13 +108,13 @@ export default function Navbar() {
                             <div>
                                 <Link
                                     to="/"
-                                    className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+                                    className="flex w-full items-center justify-center rounded-md border border-transparent bg-gray-800 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-gray-900"
                                 >
                                     Sign up
                                 </Link>
                                 <p className="mt-6 text-center text-base font-medium text-gray-500">
                                     Existing customer?{' '}
-                                    <Link to="/" className="text-indigo-600 hover:text-indigo-500">
+                                    <Link to="/" className="text-gray-700 hover:text-gray-800">
                                         Sign in
                                     </Link>
                                 </p>
